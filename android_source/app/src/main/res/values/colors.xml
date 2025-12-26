@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Booking.com Brand Colors -->
+    <color name="booking_blue">#003580</color>
+    <color name="booking_blue_dark">#00224F</color>
+    <color name="booking_yellow">#FFB700</color>
+    <color name="background_gray">#F2F2F2</color>
+</resources>

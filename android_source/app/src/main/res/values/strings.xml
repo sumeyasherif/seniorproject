@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tour Booking</string>
+    <string name="search_hint">Enter destination</string>
+    <string name="search_button">Search</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+</resources>

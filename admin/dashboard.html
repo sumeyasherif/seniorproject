@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tour Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Tour Admin</h2>
+        <!-- Role Display -->
+        <div style="text-align:center; margin-bottom:10px; font-size:12px; opacity:0.8;">
+            Role: <span id="userRoleDisplay">Guest</span>
+        </div>
+
+        <ul id="sidebarMenu">
+            <!-- Items injected by JS based on Role -->
+        </ul>
+
+        <div class="logout-btn" onclick="logout()">Logout</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1 id="pageTitle">Hotels Management</h1>
+            <span id="userInfo">Welcome, Admin</span>
+        </header>
+
+        <div class="actions">
+            <button onclick="openModal()" class="add-btn">+ Add New Item</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name / Title</th>
+                        <th>Details (Location/Price/Date)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data injected by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Simple Modal for Add -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Add New Item</h2>
+            <form id="addForm">
+                <input type="hidden" id="itemId">
+                <input type="text" id="itemName" placeholder="Name" required>
+                <input type="text" id="itemDetail" placeholder="Location / Price" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Check auth on load
+        if (!localStorage.getItem('user')) {
+            window.location.href = 'index.html';
+        } else {
+            // Load default
+            switchTab('hotels');
+        }
+    </script>
+</body>
+
+</html>

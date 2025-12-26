@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background_gray">#F2F2F2</color>
+    <color name="black">#FF000000</color>
+    <color name="booking_blue">#003580</color>
+    <color name="booking_blue_dark">#00224F</color>
+    <color name="booking_yellow">#FFB700</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Tour Booking</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_search">Search</string>
+    <string name="search_button">Search</string>
+    <string name="search_hint">Enter destination</string>
+    <style name="Theme.TourApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/booking_blue</item>
+        <item name="colorPrimaryVariant">@color/booking_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/booking_yellow</item>
+        <item name="colorSecondaryVariant">@color/booking_yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

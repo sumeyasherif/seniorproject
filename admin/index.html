@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Tour Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Tour System Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="admin@tour.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required placeholder="******">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="errorMsg" class="error"></p>
+
+            <div style="margin-top:20px; font-size:12px; text-align:left; color:#666;">
+                <strong>Test Accounts:</strong><br>
+                1. <b>Admin:</b> admin@tour.com <br>
+                2. <b>Hotel Mgr:</b> hotel@tour.com <br>
+                3. <b>Car Mgr:</b> car@tour.com <br>
+                4. <b>Event Org:</b> event@tour.com
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
