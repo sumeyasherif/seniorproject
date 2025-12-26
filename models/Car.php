@@ -11,7 +11,7 @@ class Car
         $db = new Database();
         $this->conn = $db->getConnection();
     }
-
+    //xz
     public function getAll()
     {
         $query = "SELECT * FROM " . $this->table;
